@@ -9,19 +9,19 @@ function clickCounter() {
     } else {
       localStorage.clickcount = 1;
     }
-    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+    document.getElementById("result").innerHTML = "クリックした回数は " + localStorage.clickcount + " 回";
   } else {
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    document.getElementById("result").innerHTML = "このブラウザは、Web Storage APIをサポートしていません。";
   }
 }
 </script>
 </head>
 <body>
 
-<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<p><button onclick="clickCounter()" type="button">クリック！</button></p>
 <div id="result"></div>
-<p>Click the button to see the counter increase.</p>
-<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+<p>クリックすると回数が増えます。</p>
+<p>タブかウィンドウを閉じてください。開きなおしてください。回数はどうなっているでしょう？</p>
 
 </body>
 </html>
